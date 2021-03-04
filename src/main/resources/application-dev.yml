@@ -1,0 +1,27 @@
+server:
+  port: 8090
+
+
+# https://oapi.dingtalk.com/robot/send?access_token=549b9b9040c2998f1c908187f170e649962b3f7a6aa5dc0e54d7d298e36e3498
+dingding:
+  appkey: dingduer2x2y3xvv0hjd
+  appsecret: GuRJGMCWKZsKRIrPR-NiW3D4hP_UI19PhmI6QugDoCQSfGw7XhcAy6QZZ9hNOgTc
+  agentId: 766405830
+  chatId: chatf4ba3f20f363a3cd420f7826a82bdfdc
+  robotMsgUrl: https://oapi.dingtalk.com/robot/send?access_token=549b9b9040c2998f1c908187f170e649962b3f7a6aa5dc0e54d7d298e36e3498
+  robotSecret: SECc784f568afb650c663ec489fb2efc283a1451791e92f6bec085d2034d0e06264
+  cityPlatformKeyword: 数据上传至市平台报警
+  cityPlatformRobotMsgUrl: https://oapi.dingtalk.com/robot/send?access_token=76b08b3e0860c283c2cd2487ad60d007d380eb8a476e48ff246604f40eb837cc
+  cityPlatformRobotSecret: SECf174b5066fca4523e1d6f26fe427cc02f4804e7762b3eb48cec556f07780df6e
+#dingding:
+#  appkey: dingwlfvap5ztxeivtri
+#  appsecret: NdCgfHdJ2wU4RuWabAvrCGgTgXKYt-1JGoV1ibdlFLwBMOtdPLEhlHMasqxQ_Vyb
+#  agentId: 767563017
+#  chatId: chat3d22bffba00788a79ca5a13d4831de74
+
+
+#dingding:
+#  appkey: dingwef6lz4kaxvjelf6
+#  appsecret: Y6ZX4nXFdFPRiQaylQhZDJ_9deQqog4NnAKYS8ygRq5YwppQqEr9pTws-EEFLAxW
+#  agentId: 767755660
+#  chatId: chat1a9ac121e7f2625f8f2e298caeebe74c

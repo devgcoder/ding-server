@@ -1,0 +1,37 @@
+server:
+  port: 8090
+
+logging:
+  level:
+    root: INFO
+  pattern:
+    file: '%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n'
+    console: '%date{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n'
+  file:
+    max-history: 7
+    name: ./logs/dingserver.log
+
+dingding:
+  appkey: dingwef6lz4kaxvjelf6
+  appsecret: Y6ZX4nXFdFPRiQaylQhZDJ_9deQqog4NnAKYS8ygRq5YwppQqEr9pTws-EEFLAxW
+  agentId: 767755660
+  chatId: chat1a9ac121e7f2625f8f2e298caeebe74c
+  robotMsgUrl: https://oapi.dingtalk.com/robot/send?access_token=77045e0e25733e8a884b51504bd56c9cddd121f056c8aacf656dcd116d6c5540
+  robotSecret: SEC78aeeb9e2123011503734551e5119670bc18369ff04ce7123c97afbbc3bef226
+  configList:
+    - cityPlatform:
+        keyword: 数据上传至市平台报警
+        robotMsgUrl: https://oapi.dingtalk.com/robot/send?access_token=76b08b3e0860c283c2cd2487ad60d007d380eb8a476e48ff246604f40eb837cc
+        robotSecret: SECf174b5066fca4523e1d6f26fe427cc02f4804e7762b3eb48cec556f07780df6e
+    - dataSync:
+        keyWord: 数据同步服务报警
+        robotMsgUrl: https://oapi.dingtalk.com/robot/send?access_token=7a083eb2991d5229a3996ad2462fcbd8fa92047db8ad3baba8fdd8dd04d55747
+        robotSecret: SEC782db99e1a5ca29114e18b9e79d81fa3248afd06b7a9b666eaa9cdb8c38efa63
+    - appCrash:
+        keyword: APP报警
+        robotMsgUrl: https://oapi.dingtalk.com/robot/send?access_token=a1ebd9abe7d9f297f110d0db914b95dd9d338771295eb0b2759f56c22517174a
+        robotSecret: SEC45d62fd0beb79a7fff267575083c7cf61660102436fe99e0c203e29ebc6aaacf
+    - serverWarn:
+        keyword: 服务器报警
+        robotMsgUrl: https://oapi.dingtalk.com/robot/send?access_token=bac32934057f9e54bd7e0795d2bb2d65cbb70270fbf7f42f0bcf76b4f281f2ed
+        robotSecret: SEC75d8390e234a5ab795a0037128578c2dd15a068507b9880342757b75b8485869
